@@ -41,3 +41,7 @@ python observable.py [csv_file_path] [--lat LATITUDE] [--long LONGITUDE] [--alt_
 - --alt_max (float): Maximum altitude visibility from the observation point, in degrees. Default is 90°.
 - --timezone (str): Timezone offset from UTC in the format '+X' or '-X'. Default is '0' (UTC).
 - --plot: If specified, the script will generate a plot showing the altitude of the object over time, with visible points in green and non-visible points in red.
+
+# Additional material: Celestial coordinates 3D plot
+
+The script `CelestialCoords` displays a 3D plot of the Earth with its rotation axis. It also shows the Ecliptic, Celestial Equator, some notable points and the definition of the GCRS axes.
