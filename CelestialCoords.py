@@ -79,9 +79,9 @@ y_axis_x, y_axis_y, y_axis_z = (0, 0, 0)
 y_axis_u, y_axis_v, y_axis_w = np.cross([x_axis_u, x_axis_v, x_axis_w], [z_axis_u, z_axis_v, z_axis_w])
 
 # Plot GCRS axes
-ax.quiver(x_axis_x, x_axis_y, x_axis_z, x_axis_u, x_axis_v, x_axis_w, color='r', length = 2.5, arrow_length_ratio=0.1)
-ax.quiver(y_axis_x, y_axis_y, y_axis_z, y_axis_u, y_axis_v, y_axis_w, color='r', length = 2.5, arrow_length_ratio=0.1)
-ax.quiver(z_axis_x, z_axis_y, z_axis_z, z_axis_u, z_axis_v, z_axis_w, color='r', length = 2.5, arrow_length_ratio=0.1)
+ax.quiver(x_axis_x, x_axis_y, x_axis_z, x_axis_u, x_axis_v, x_axis_w, color='cyan', length = 2.5, arrow_length_ratio=0.1, label='GCRS x-axis')
+ax.quiver(y_axis_x, y_axis_y, y_axis_z, y_axis_u, y_axis_v, y_axis_w, color='magenta', length = 2.5, arrow_length_ratio=0.1, label='GCRS y-axis')
+ax.quiver(z_axis_x, z_axis_y, z_axis_z, z_axis_u, z_axis_v, z_axis_w, color='purple', length = 2.5, arrow_length_ratio=0.1, label='GCRS z-axis')
 
 # Labels and legend
 ax.set_xlabel('X')
