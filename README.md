@@ -29,7 +29,7 @@ pip install pandas matplotlib astropy
 From a terminal window:
 
 ```
-python script.py [csv_file_path] [--lat LATITUDE] [--long LONGITUDE] [--alt_min MIN_ALTITUDE] [--alt_max MAX_ALTITUDE] [--timezone TIMEZONE] [--save] [--plot]
+python observable.py [csv_file_path] [--lat LATITUDE] [--long LONGITUDE] [--alt_min MIN_ALTITUDE] [--alt_max MAX_ALTITUDE] [--timezone TIMEZONE] [--save] [--plot]
 ```
 
 ### Arguments
