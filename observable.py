@@ -71,9 +71,11 @@ def main():
         
         plt.style.use(astropy_mpl_style)
         plt.figure()
-        plt.scatter(visible['Local time'], visible['Alt'], color='g')
-        plt.scatter(not_visible['Local time'], not_visible['Alt'], color='r')
+        plt.scatter(visible['Local time'], visible['Alt'], color='g', label='Visible')
+        plt.scatter(not_visible['Local time'], not_visible['Alt'], color='r', label='Not visible')
+        plt.ylabel('Altitude [degrees]')
         plt.xticks(rotation='vertical')
+        plt.legend()
         plt.show()
 
 if __name__ == '__main__':
